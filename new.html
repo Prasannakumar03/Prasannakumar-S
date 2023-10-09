@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Page</title>
+</head>
+<body>
+<script type="text/javascript">
+	var i=0;
+	var col=new Array("red","blue","green","black","grey");
+	function change()
+	{
+		document.body.style.backgroundColor=col[i];
+		i++;
+		if(i>col.length)
+		{
+			i=0;
+		}
+		window.setTimeout("change()",1000);
+	}
+	window.onload=change();
+</script>
+
+<center>
+<h2> <big><b> Registration Page </b></big> </h2>
+
+Enter Name: <input type="text" required><br>
+Reg no:<input type="text"><br>
+
+
+
+</body>
+</html>
